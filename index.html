@@ -13,17 +13,19 @@
   <script>
     window.Razorpay = {
       config: {
-        api: "https://api-dark.razorpay.com/",
+        // api: "https://api-dark.razorpay.com/",
+        api: "https://api.razorpay.com",
         // api: "https://api-web.ext.dev.razorpay.in/",
+        // frame:
+        //   "https://api-dark.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
         frame:
-          "https://api-dark.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
+          "https://api.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
         // frame:
         //   "https://api-web.ext.dev.razorpay.in/test/checkout.html?branch=feat/cookie-enabled-check",
       },
     };
   </script>
-  <script
-    src="https://betacdn.np.razorpay.in/checkout/builds/branch-builds/feat/cookie-enabled-check/v1/checkout.js"></script>
+  <script src="https://betacdn.np.razorpay.in/checkout/builds/branch-builds/feat/cookie-enabled-check/v1/checkout.js"></script>
   <script>
     var options = {
       // key: "rzp_test_SFNleqOkx50zPf",
