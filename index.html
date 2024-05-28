@@ -13,12 +13,12 @@
   <script>
     window.Razorpay = {
       config: {
-        // api: "https://api-dark.razorpay.com/",
-        api: "https://api-web.ext.dev.razorpay.in/",
-        // frame:
-        //   "https://api-dark.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
+        api: "https://api-dark.razorpay.com/",
+        // api: "https://api-web.ext.dev.razorpay.in/",
         frame:
-          "https://api-web.ext.dev.razorpay.in/test/checkout.html?branch=feat/cookie-enabled-check",
+          "https://api-dark.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
+        // frame:
+        //   "https://api-web.ext.dev.razorpay.in/test/checkout.html?branch=feat/cookie-enabled-check",
       },
     };
   </script>
@@ -27,8 +27,8 @@
   <script>
     var options = {
       // key: "rzp_test_SFNleqOkx50zPf",
-      // key: "rzp_live_ILgsfZCZoFIKMb",
-      key: "rzp_test_WDbjEgaCEwT52U",
+      key: "rzp_live_ILgsfZCZoFIKMb",
+      // key: "rzp_test_WDbjEgaCEwT52U",
       // order_id: "rzp_test_WDbjEgaCEwT52U",
       remember_customer: true,
       amount: 1000000,
