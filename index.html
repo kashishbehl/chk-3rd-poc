@@ -2,20 +2,36 @@
 
 <body>
   <button id="pay">Click Me</button>
-  <script>
+  <!-- <script>
     var Razorpay = {
       config: {
         frame:
           "https://api.razorpay.com/test/checkout.html?branch=feat/3rd-party-cookie-poc",
       },
     };
+  </script> -->
+  <script>
+    window.Razorpay = {
+      config: {
+        // api: "https://api-dark.razorpay.com/",
+        api: "https://api-web.ext.dev.razorpay.in/",
+        // frame:
+        //   "https://api-dark.razorpay.com/test/checkout.html?branch=feat/cookie-enabled-check",
+        frame:
+          "https://api-web.ext.dev.razorpay.in/test/checkout.html?branch=master",
+      },
+    };
   </script>
-  <script src="https://betacdn.np.razorpay.in/checkout/builds/branch-builds/feat/3rd-party-cookie-poc/v1/checkout.js"></script>
+  <script src="https://betacdn.np.razorpay.in/checkout/builds/branch-builds/master/v1/checkout.js"></script>
   <script>
     var options = {
-      key: "rzp_live_6SEf9SiL78Sf6Z",
+      // key: "rzp_test_SFNleqOkx50zPf",
+      // key: "rzp_live_ILgsfZCZoFIKMb",
+      key: "rzp_test_WDbjEgaCEwT52U",
+      // order_id: "rzp_test_WDbjEgaCEwT52U",
       remember_customer: true,
       amount: 1000000,
+      contact: "+919902529070",
       handler: (resp) => alert(resp.razorpay_payment_id),
     };
 
